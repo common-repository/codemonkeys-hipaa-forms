@@ -1,0 +1,24 @@
+/**
+ * GRAVITY SUBMITTED FORMS STYLES
+ * Created by Spencer on 5/1/2021.
+ * V2.7.7
+ */
+
+.gfield_list_cell span {
+    padding-right: 5px;
+}
+.gfield_list_cell span:last-of-type {
+    padding-right: 0px;
+}
+
+.cm-hipaa-submitted-forms .gform_body .gfield {
+    margin-bottom: 8px;
+}
+
+.cm-hipaa-submitted-forms .gform_body legend {
+    font-weight: 700;
+}
+
+.cm-hipaa-submitted-form-fields .gchoice label {
+    font-weight: inherit;
+}

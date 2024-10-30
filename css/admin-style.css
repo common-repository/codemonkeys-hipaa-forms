@@ -1,0 +1,2529 @@
+/**
+ * Created by Spencer on 7/16/2018.
+ * V3.0.5
+ */
+
+.toplevel_page_hipaa-forms #wpfooter {
+    bottom: auto;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.cm-toggle {
+    cursor: pointer;
+}
+
+.cm-toggle-content {
+    display: none;
+}
+
+.three-quarter-width {
+    width: 75%;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.third-width {
+    width: 33.333%;
+}
+
+.quarter-width {
+    width: 25%;
+}
+
+/*** INLINE BLOCK GRID ***/
+.cm_hipaa_grid_row {
+    position: relative;
+    font-size: 0;
+    width: calc(100% + 1vw);
+    margin-left: -0.5vw;
+    /* Safari for iOS < 8 and IE <= 10 */
+    content: 'viewport-units-buggyfill; width: calc(100% + 1vw); margin-left: -0.5vw;';
+}
+
+.cm_hipaa_grid_row_nogap {
+    position: relative;
+    font-size: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+}
+.cm_hipaa_col_80,
+.cm_hipaa_col_75,
+.cm_hipaa_col_70,
+.cm_hipaa_col_60,
+.cm_hipaa_col_50,
+.cm_hipaa_col_45,
+.cm_hipaa_col_40,
+.cm_hipaa_col_35,
+.cm_hipaa_col_33,
+.cm_hipaa_col_30,
+.cm_hipaa_col_28,
+.cm_hipaa_col_25,
+.cm_hipaa_col_20,
+.cm_hipaa_col_16,
+.cm_hipaa_col_15,
+.cm_hipaa_col_14,
+.cm_hipaa_col_12 {
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+    font-size: 16px;
+    padding: 0;
+    margin-bottom: 25px;
+    flex: auto;
+}
+.cm_hipaa_col_80 {
+    width: 80%;
+}
+.cm_hipaa_col_75 {
+    width: 75%;
+}
+.cm_hipaa_col_70 {
+    width: 70%;
+}
+.cm_hipaa_col_60 {
+    width: 60%;
+}
+.cm_hipaa_col_50 {
+    width: 50%;
+}
+.cm_hipaa_col_45 {
+    width: 45%;
+}
+.cm_hipaa_col_40 {
+    width: 40%;
+}
+.cm_hipaa_col_35 {
+    width: 35%;
+}
+.cm_hipaa_col_33 {
+    width: 33.333%;
+}
+.cm_hipaa_col_30 {
+    width: 30%;
+}
+.cm_hipaa_col_28 {
+    width: 28%;
+}
+.cm_hipaa_col_25 {
+    width: 25%;
+}
+.cm_hipaa_col_20 {
+    width: 20%;
+}
+.cm_hipaa_col_16 {
+    width: 16.6666667%;
+}
+.cm_hipaa_col_15 {
+    width: 15%;
+}
+.cm_hipaa_col_14 {
+    width: 14.28571428571429%;
+}
+.cm_hipaa_col_12 {
+    width: 12.5%;
+}
+
+.cm-hipaa-height-100 {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+    white-space: nowrap;
+    height: 100%;
+}
+/* END INLINE BLOCK GRID */
+
+/*** MATERIAL ICONS ***/
+.material-icons {
+    vertical-align: middle;
+}
+
+/*** CUSTOM LOADING BAR ***/
+.cm-hipaa-forms-progress-wrapper{
+    position: absolute;
+    height: 5px;
+    width: 75%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.cm-hipaa-forms-progress {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: #ddd;
+}
+.cm-hipaa-forms-progress-bar {
+    position: absolute;
+    top: -1px;
+    width: 10%;
+    height: 4px;
+    background-color: #878687;
+}
+.cm-hipaa-forms-progress-label {
+    text-align: center;
+    line-height: 30px;
+    color: #000;
+}
+
+.cm-hipaa-forms-loading-center {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 15px;
+    margin: auto;
+}
+
+/*** BUTTONS ***/
+.cm-button {
+    display: inline-block;
+    background-color: #cd3f4a;
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.75vh 0.75vw;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition:    all 0.2s ease-in-out;
+    -ms-transition:     all 0.2s ease-in-out;
+    -o-transition:      all 0.2s ease-in-out;
+    transition:         all 0.2s ease-in-out;
+    /* Safari for iOS < 8 and IE <= 10 */
+    content: 'viewport-units-buggyfill; padding: 0.75vh 0.75vw;';
+}
+
+.cm-button:hover {
+    background-color: #fff;
+    color: #cd3f4a;
+}
+
+.cm-ghost-button {
+    display: inline-block;
+    background: transparent;
+    border: 1px solid #2d576f !important;
+    color: #2d576f;
+    padding: 0.75vh 0.75vw;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition:    all 0.2s ease-in-out;
+    -ms-transition:     all 0.2s ease-in-out;
+    -o-transition:      all 0.2s ease-in-out;
+    transition:         all 0.2s ease-in-out;
+    /* Safari for iOS < 8 and IE <= 10 */
+    content: 'viewport-units-buggyfill; padding: 0.75vh 0.75vw;';
+}
+
+.cm-ghost-button:hover {
+    background: #2d576f;
+    color: #fff;
+}
+
+.cm-pagination-button {
+    display: inline-block;
+    background-color: #444;
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 0.75vh 0.75vw;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition:    all 0.2s ease-in-out;
+    -ms-transition:     all 0.2s ease-in-out;
+    -o-transition:      all 0.2s ease-in-out;
+    transition:         all 0.2s ease-in-out;
+    /* Safari for iOS < 8 and IE <= 10 */
+    content: 'viewport-units-buggyfill; padding: 0.75vh 0.75vw;';
+}
+
+.cm-pagination-button:hover {
+    background-color: #fff;
+    color: #444;
+}
+
+.cm-sign-baa-button {
+    display: inline-block;
+    background: transparent;
+    border: 1px solid #2d576f !important;
+    color: #2d576f;
+    padding: 0.75vh 0.75vw;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition:    all 0.2s ease-in-out;
+    -ms-transition:     all 0.2s ease-in-out;
+    -o-transition:      all 0.2s ease-in-out;
+    transition:         all 0.2s ease-in-out;
+    /* Safari for iOS < 8 and IE <= 10 */
+    content: 'viewport-units-buggyfill; padding: 0.75vh 0.75vw;';
+}
+
+.cm-sign-baa-button:hover {
+    background: #2d576f;
+    color: #fff;
+}
+
+/*** TABS ***/
+.cm-hipaa-tab {
+    display: inline-block;
+    background: #2d576f;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 5px 15px;
+    margin-bottom: -1px;
+    cursor: pointer;
+}
+
+.cm-hipaa-tab.active {
+    background: #4f7c96;
+}
+
+.cm-hipaa-tab-content-wrapper {
+    position: relative;
+    border: 1px solid #2d576f;
+    background: #efece9;
+    padding: 40px;
+    min-height: 60vh;
+    /* Safari for iOS < 8 and IE <= 10 */
+    content: 'viewport-units-buggyfill; min-height: 60vh;';
+}
+
+.cm-hipaa-tab-content-wrapper h1 {
+    color: #f47b2f;
+    font-size: 1.3em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.cm-hipaa-tab-content-wrapper h2 {
+    color: #f47b2f;
+    font-size: 1.1em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.cm-hipaa-tab-content-wrapper h4 {
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 1em 0;
+}
+
+.cm-hipaa-tab-content {
+    display: none;
+    color: #2d576f;
+}
+
+.cm-hipaa-tab-content:first-of-type {
+    display: block;
+}
+
+/* TOUR TAB SECTION */
+.cm-hipaa-tour-tab-left-col, .cm-hipaa-tour-tab-right-col {
+    height: 100%;
+}
+
+.cm-hipaa-tour-tab-left-col {
+    padding: 1vh 1vw;
+    position: relative;
+    /* Safari for iOS < 8 and IE <= 10 */
+    content: 'viewport-units-buggyfill; padding: 1vh 1vw;';
+}
+
+.cm-hipaa-tour-tab-right-col {
+    padding: 1vh 1vw;
+    /* Safari for iOS < 8 and IE <= 10 */
+    content: 'viewport-units-buggyfill; padding: 1vh 1vw;';
+}
+
+.cm-hipaa-tour-tab-menu ul {
+    position: relative;
+    margin-top: 0;
+}
+
+.cm-hipaa-tour-tab-menu li {
+    list-style-type: none !important;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.cm-hipaa-tour-tab-content-wrapper {
+    border: 2px solid #4f7c96;
+    padding: 1vh 0 !important;
+    /* Safari for iOS < 8 and IE <= 10 */
+    content: 'viewport-units-buggyfill; padding: 1vh 0 !important;';
+}
+
+.cm-hipaa-tour-tab-content {
+    display: none;
+    font-size: 16px;
+    min-height: 500px;
+    overflow: hidden;
+    word-wrap: normal;
+    text-align: left;
+    padding: 0 2vw;
+    /* Safari for iOS < 8 and IE <= 10 */
+    content: 'viewport-units-buggyfill; padding: 0 2vw;';
+}
+
+.cm-hipaa-tour-tab-content-wrapper .cm-hipaa-tour-tab-content:first-of-type {
+    display: block;
+}
+
+.cm-hipaa-tour-tab-content .cm-hipaa-mCSB_container {
+    color: #fff;
+}
+
+.cm-hipaa-tour-tab-link {
+    background-color: #2d576f;
+    box-shadow: 0px 1px 3px #888;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2vmin;
+    margin-bottom: 1.25vh;
+    width: 90%;
+    /* Safari for iOS < 8 and IE <= 10 */
+    content: 'viewport-units-buggyfill; margin-bottom: 1.25vh;';
+}
+
+.cm-hipaa-tour-tab-link-inner {
+    padding: 1vh 1vw;
+    /* Safari for iOS < 8 and IE <= 10 */
+    content: 'viewport-units-buggyfill; padding: 1vh 1vw;';
+}
+
+.cm-hipaa-tab-name {
+    vertical-align: middle;
+}
+
+.cm-hipaa-active-tour-tab-link {
+    background-color: #4f7c96;
+    width: 100% !important;
+    box-shadow: none;
+}
+
+.cm-hipaa-accordion-tab-link {
+    display: none;
+    background-color: #999;
+    box-shadow: 0 1px 3px #000;
+    color: #fff;
+    font-size: 22px;
+    margin-top: 1vh;
+    padding: 1vh 1vw;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    /* Safari for iOS < 8 and IE <= 10 */
+    content: 'viewport-units-buggyfill; margin-top: 1vh; padding: 1vh 1vw;';
+}
+
+.cm-hipaa-accordion-tab-link:first-of-type {
+    margin-top: -5px;
+}
+
+.cm-hipaa-active-accordion-tab-link {
+    background-color: #666;
+}
+
+.cm-hipaa-form-plugin-toggle-buttons {
+    margin-bottom: 15px;
+}
+
+.cm-hipaa-select-form-item {
+    background: #eaeaea;
+    padding: 15px 5px;
+}
+
+.cm-hipaa-select-form-item:nth-of-type(2n) {
+    background: #ddd;
+}
+
+.cm-hipaa-select-form-add-signature {
+    font-size: 10px;
+    opacity: 0.3;
+    border: 1px solid #999;
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.cm-hipaa-select-form-add-signature .material-icons {
+    font-size: 14px;
+}
+
+.cm-hipaa-select-form-item-fields {
+    display: none;
+    margin-left: 15px;
+}
+
+.cm-hipaa-select-form-item-fields h4, .cm-hipaa-select-form-item-errors h4 {
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+.cm-hipaa-toggle-fields {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.cm-hipaa-toggle-errors {
+    color: red;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.cm-hipaa-select-form-item.errors .cm-hipaa-toggle-fields {
+    display: none;
+}
+
+.cm-hipaa-select-form-item-errors {
+    display: none;
+    color: red;
+    margin-left: 15px;
+}
+
+.cm-hipaa-form-select {
+    position: relative;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.cm-hipaa-select-form-item.selected .cm-hipaa-form-select {
+    color: green;
+}
+
+.cm-hipaa-select-form-item.errors .cm-hipaa-form-select {
+    color: #ddd;
+    cursor: auto;
+}
+
+.cm-hipaa-upgrade-subscription-notice {
+    background: #353535;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 15px;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.cm-hipaa-upgrade-subscription-notice .cm-button {
+    float: right;
+}
+
+.cm-hipaa-update-notice {
+    background: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #8B0000;
+    font-style: italic;
+    font-weight: 400;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.cm-hipaa-forms-update-notice-error {
+    color: red;
+}
+
+.cm-hipaa-forms-update-notice-sub-error {
+    color: red;
+    font-size: 14px;
+}
+
+/*** SUBMITTED FORMS & ACCESS LOGS ***/
+.cm-hipaa-forms-no-key-cta {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.cm-submitted-forms-filters-wrapper,
+.cm-hipaa-forms-logs-wrapper {
+    border-bottom: 1px solid #bbb;
+    padding: 15px 0;
+}
+
+.cm-submitted-form-filter input {
+    font-size: 12px;
+    width: 90%;
+    padding: 0 4px;
+}
+
+.cm-submitted-form-date-wrapper {
+    margin-bottom: 25px;
+}
+.cm-submitted-form-date-wrapper label {
+    font-size: 14px;
+    font-style: italic;
+    margin: 2px 0 0 2px;
+}
+.cm-submitted-form-date-wrapper input {
+    width: 125px;
+}
+
+#cm-submitted-form-filter-location,
+#cm-submitted-form-filter-form-name,
+#cm-submitted-form-filter-status {
+    width: 90%;
+}
+
+#cm-submitted-forms-results,
+#cm-hipaa-forms-logs-results {
+    margin-top: 30px;
+}
+
+.cm-hipaa-forms-staging-message {
+    text-align: center;
+    font-style: italic;
+}
+
+.cm-hipaa-forms-grace-message,
+.cm-hipaa-forms-grace-message a {
+    text-align: center;
+    background: #731d1d;
+    color: #fff;
+    letter-spacing: 1px;
+    font-style: italic;
+    padding: 10px;
+}
+
+.cm-hipaa-submitted-forms,
+.cm-hipaa-forms-logs {
+    table-layout: fixed;
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+
+.cm-hipaa-submitted-forms td,
+.cm-hipaa-forms-logs td {
+    border-bottom: 1px solid #bbb;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.cm-hipaa-submitted-form {
+    background: #fff;
+}
+
+.cm-hipaa-submitted-form.cm-hipaa-submitted-form-viewed {
+    background: #f4f7f7;
+}
+
+.cm-hipaa-submitted-forms thead td,
+.cm-hipaa-forms-logs thead td {
+    border-bottom: 1px solid #444;
+    font-weight: 600;
+}
+
+.cm-hipaa-submitted-form-options {
+    text-align: left;
+}
+
+.cm-hipaa-submitted-form-options div {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.cm-hipaa-submitted-form-options div:last-of-type {
+    margin-right: 0;
+}
+
+.cm-hipaa-submitted-form-print {
+    float: right;
+    color: #2d576f;
+    cursor: pointer;
+
+}
+
+.cm-hipaa-submitted-form-notes-icon {
+    cursor: auto !important;
+}
+
+.cm-hipaa-submitted-form-fields-row {}
+
+.cm-hipaa-submitted-form-fields-row td {
+    padding: 0;
+    border-bottom: 0;
+}
+
+.cm-hipaa-submitted-form-fields {
+    display: none;
+    border-bottom: 1px solid #bbb;
+    text-align: left;
+    padding: 2vh 1vw;
+    max-width: 100%;
+    word-wrap: break-word;
+    /* Safari for iOS < 8 and IE <= 10 */
+    content: 'viewport-units-buggyfill; padding: 2vh 1vw;';
+}
+
+.validation_message {
+    display: none;
+}
+
+.cm-hipaa-submitted-form-fields .cm-hipaa-tour-tab-content-wrapper {
+    border: 1px solid #4f7c96;
+}
+
+.cm-hipaa-submitted-form-fields h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.cm-hipaa-submitted-form-fields-inner {
+    position: relative;
+    background: #fff;
+    box-shadow: 2px 2px 2px rgba(8,8,8,0.4);
+    padding: 15px;
+}
+
+.cm-hipaa-forms-loading-form {
+    text-align: center;
+}
+
+.cm-hipaa-submitted-form-fields .gform_page,
+.cm-hipaa-submitted-form-fields .caldera-form-page {
+    border-top: 1px solid #999;
+    padding: 15px 0;
+}
+
+.cm-hipaa-submitted-form-fields .gf_page_steps {
+    display: none;
+}
+
+.cm-hipaa-submitted-form-webview-notes {
+    border-top: 1px solid #999;
+    margin-top: 15px;
+    padding: 15px 0;
+}
+
+.cm-hipaa-submitted-form-history-item {
+    border-bottom: 1px solid #999;
+    padding: 15px 0;
+}
+
+.cm-hipaa-submitted-form-history-item:last-of-type {
+    border-bottom: 0;
+}
+
+.cm-hipaa-submitted-form-history-info {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.cm-hipaa-submitted-form-history-event {
+    margin-top: 10px;
+}
+
+.cm-submitted-form-history-pagination-wrapper {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.cm-hipaa-export-notice {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-style: italic;
+    color: #cd3f4a;
+}
+
+.cm-hipaa-submitted-form-field {
+    margin-bottom: 15px;
+}
+
+.cm-hipaa-submitted-form-field-label {
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.cm-hipaa-submitted-form-pdf-url a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #cd3f4a;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition:    all 0.2s ease-in-out;
+    -ms-transition:     all 0.2s ease-in-out;
+    -o-transition:      all 0.2s ease-in-out;
+    transition:         all 0.2s ease-in-out;
+}
+
+.cm-hipaa-submitted-form-pdf-url a:hover {
+    color: #2d576f;
+}
+
+.cm-hipaa-submitted-form-pdf-url a:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.cm-hipaa-submitted-form-signature {
+    text-align: right;
+}
+
+.cm-hipaa-submitted-form-signature img {
+    max-height: 75px;
+    max-width: 30%;
+}
+
+.cm-submitted-forms-pagination-wrapper,
+.cm-hipaa-forms-logs-pagination-wrapper {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.cm-submitted-forms-pagination,
+.cm-hipaa-forms-logs-pagination {
+    display: inline-block;
+    width: 50%;
+}
+
+#cm-hipaa-submitted-forms-prev,
+#cm-hipaa-forms-logs-prev {
+    text-align: left;
+}
+
+.cm-hipaa-submitted-forms-count,
+.cm-hipaa-forms-logs-count {
+    text-align: center;
+}
+
+#cm-hipaa-submitted-forms-next,
+#cm-hipaa-forms-logs-next {
+    text-align: right;
+}
+
+.cm-hipaa-form-notes-add-note-input {
+    width: 100%;
+    min-height: 150px;
+}
+
+.cm-hipaa-form-notes-add-note-submit {
+    float: right;
+    margin-top: 10px;
+}
+
+.cm-hipaa-form-notes {
+    position: relative;
+    margin-top: 15px;
+}
+
+.cm-hipaa-submitted-form-note-wrapper {
+    background: #f5f5f5;
+    padding: 15px 5px;
+}
+
+.cm-hipaa-submitted-form-note-wrapper:nth-of-type(2n) {
+    background: #ddd;
+}
+
+.cm-hipaa-submitted-form-note-date,
+.cm-hipaa-submitted-form-note-name {
+    color: #4f7c96;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.cm-hipaa-submitted-form-note {
+    margin-top: 15px;
+}
+
+.cm-hipaa-forms-file-wrapper {
+    border-bottom: 1px solid #bbb;
+    padding: 15px 0;
+}
+
+.cm-hipaa-forms-file-wrapper:first-of-type {
+    padding-top: 0;
+}
+
+.cm-hipaa-forms-file-tag {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.cm-hipaa-form-file-status {
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+/*** BULK EXPORT ***/
+.cm-hipaa-forms-bulk-export-select-wrapper {
+    text-align: right;
+}
+
+.cm-hipaa-forms-bulk-export-button.cm-button {
+    float: right;
+    background: #999;
+    margin-top: 1vh;
+    cursor: auto;
+}
+.cm-hipaa-forms-bulk-export-button.cm-button.active {
+    background: #cd3f4a;
+    cursor: pointer;
+}
+.cm-hipaa-forms-bulk-export-button.cm-button.active:hover {
+    color: #eee;
+}
+
+#cm-hipaa-submitted-forms-export-notice {
+    position: relative;
+}
+
+/*** MODAL WINDOW ***/
+.cm-hipaa-forms-modal, .cm-hipaa-setting-info-modal {
+    display: none;
+    position: fixed;
+    background: rgba(0,0,0,0.6);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: 100vh;
+    width: 100vw;
+    /* Safari for iOS < 8 and IE <= 10 */
+    content: 'viewport-units-buggyfill; height: 100vh; width: 100vw;';
+}
+
+.cm-hipaa-forms-modal-inner, .cm-hipaa-setting-info-modal-inner {
+    position: absolute;
+    background: #2d576f;
+    color: #fff;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: 50vh;
+    width: 50vw;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+    /* Safari for iOS < 8 and IE <= 10 */
+    content: 'viewport-units-buggyfill; height: 50vh; width: 50vw;';
+}
+
+.cm-hipaa-forms-modal-inner-top,  .cm-hipaa-setting-info-modal-top {
+    text-align: right;
+    padding: 10px;
+}
+
+.cm-hipaa-setting-info-modal-title {
+    display: inline-block;
+    float: left;
+    text-align: left;
+    max-width: 80%;
+}
+
+.cm-hipaa-setting-info-modal-title h3 {
+    color: #fff;
+}
+
+.cm-hipaa-forms-modal-close,
+.cm-hipaa-setting-info-modal-close,
+.cm-hipaa-forms-pdf-modal-close,
+.cm-hipaa-forms-destroy-modal-close,
+.cm-hipaa-forms-su-modal-close {
+    display: inline-block;
+    font-size: 2.5vmin;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.cm-hipaa-forms-modal-inner-body {
+    text-align: center;
+    padding: 15px;
+}
+
+.cm-hipaa-setting-info-modal-body {
+    height: calc(100% - 100px);
+    padding: 15px;
+    overflow: auto;
+}
+
+.cm-hipaa-setting-info-modal-body p {
+    font-size: 16px;
+}
+
+.cm-hipaa-setting-info-modal-body a {
+    color: #c5f599;
+    text-decoration: none;
+}
+
+.cm-hipaa-forms-modal-text {
+    font-size: 2.5vmin;
+    line-height: 3.5vmin;
+}
+
+.cm-hipaa-forms-modal-inputs {
+    margin-top: 4vh;
+    /* Safari for iOS < 8 and IE <= 10 */
+    content: 'viewport-units-buggyfill; margin-top: 4vh;';
+}
+
+.cm-hipaa-forms-modal-inputs input {
+    width: 50%;
+    padding: 1vh 1vw;
+    /* Safari for iOS < 8 and IE <= 10 */
+    content: 'viewport-units-buggyfill; padding: 1vh 1vw;';
+}
+
+.cm-hipaa-forms-modal.cm-hipaa-forms-selected-users-modal .cm-hipaa-forms-modal-inner {
+    height: 80vh;
+}
+
+.cm-hipaa-forms-modal.cm-hipaa-forms-selected-users-modal .cm-hipaa-forms-selected-user-select {
+    height: 40vh;
+}
+
+.cm-hipaa-submitted-form-destroy {
+    margin-top: 50px;
+}
+
+#cm-hipaa-submitted-form-destroy-notice .cm-hipaa-forms-loading-form {
+    margin-top: 50px;
+}
+
+#cm-hipaa-submitted-form-destroy-notice .cm-hipaa-forms-loading-form img {
+    max-width: 50%;
+}
+
+.cm-hipaa-forms-update-notice {
+    color: #999;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+/* PDF MODAL */
+.cm-hipaa-forms-generate-pdf.cm-button {
+    display: inline-block;
+    margin-top: 4vh;
+    opacity: 0.5;
+    cursor: default;
+    /* Safari for iOS < 8 and IE <= 10 */
+    content: 'viewport-units-buggyfill; margin-top: 4vh;';
+}
+
+.cm-hipaa-forms-generate-pdf.cm-button:hover {
+    background: #cd3f4a;
+    color: #fff;
+}
+
+.cm-hipaa-forms-generate-pdf.cm-button.active {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.cm-hipaa-forms-generate-pdf.cm-button.active:hover {
+    background: #fff;
+    color: #cd3f4a;
+}
+
+/* SELECTED USERS MODAL */
+.cm-hipaa-forms-selected-users-submit {
+    margin-top: 15px;
+}
+
+.cm-hipaa-forms-selected-users-submit.cm-button {
+    display: inline-block;
+    margin-top: 4vh;
+    opacity: 0.5;
+    cursor: default;
+    /* Safari for iOS < 8 and IE <= 10 */
+    content: 'viewport-units-buggyfill; margin-top: 4vh;';
+}
+
+.cm-hipaa-forms-selected-users-submit.cm-button:hover {
+    background: #cd3f4a;
+    color: #fff;
+}
+
+.cm-hipaa-forms-selected-users-submit.cm-button.active {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.cm-hipaa-forms-selected-users-submit.cm-button.active:hover {
+    background: #fff;
+    color: #cd3f4a;
+}
+
+/*** SELECTED FORMS ***/
+.cm-hipaa-forms-success-message-wrapper,
+.cm-hipaa-forms-success-redirect-wrapper,
+.cm-hipaa-forms-success-callback-wrapper,
+.cm-hipaa-forms-approved-users-wrapper,
+.cm-hipaa-forms-selected-users-wrapper,
+.cm-hipaa-forms-custom-notification-wrapper {
+    display: none;
+}
+
+.cm-hipaa-forms-success-message-wrapper.active,
+.cm-hipaa-forms-success-redirect-wrapper.active,
+.cm-hipaa-forms-success-callback-wrapper.active,
+.cm-hipaa-forms-approved-users-wrapper.active,
+.cm-hipaa-forms-selected-users-wrapper.active,
+.cm-hipaa-forms-custom-notification-wrapper.active {
+    display: block;
+}
+
+.cm-hipaa-forms-experimental-notice {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.cm-hipaa-select-form-form {
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+.cm-hipaa-select-form-field-wrapper {
+    position: relative;
+    background: #efece9;
+    padding: 15px;
+}
+
+.cm-hipaa-select-form-field-wrapper:nth-child(odd) {
+    background: #f5f5f5;
+}
+
+.cm-hipaa-setting-info {
+    color: #a2b7c3;
+    cursor: pointer;
+}
+
+.cm-hipaa-select-form-field-wrapper .cm-hipaa-setting-info {
+    font-size: 20px;
+    margin-top: -20px;
+}
+
+.cm-hipaa-select-form-field {
+    padding: 5px;
+}
+
+.cm-hipaa-select-form-field input[type="text"],
+.cm-hipaa-select-form-field textarea {
+    width: 100%;
+}
+
+.cm-hipaa-select-form-item-fields h4 {
+    color: #4f7c96;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.cm-form-settings-notice {
+    float: left;
+    margin-top: 15px;
+}
+
+.cm-hipaa-select-form-form .cm-button {
+    float: right;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+.cm-hipaa-privacy-notice-options .cm-hipaa-setting-info,
+.cm-hipaa-user-role-settings .cm-hipaa-setting-info,
+.cm-hipaa-notification-settings .cm-hipaa-setting-info,
+.cm-hipaa-form-status-options .cm-hipaa-setting-info {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.cm-hipaa-form-builder-select-wrapper {
+    padding: 15px 0;
+}
+
+.cm-hipaa-forms-no-form-builder {
+    font-style: italic;
+    padding: 15px 0;
+}
+
+textarea[name="cm-hipaa-selected-form-notification-message-input"] {
+    min-height: 300px;
+    width: 100%;
+}
+
+.cm-hipaa-selected-form-notification-notice {
+    font-style: italic;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.cm-hipaa-form-settings-remove-input {
+    cursor: pointer;
+}
+
+.cm-hipaa-forms-custom-status-select {
+    width: 90%;
+}
+
+.cm-hipaa-forms-custom-status-notice {
+    color: #f47b2f;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.cm-hipaa-submitted-form-custom-status {
+    text-align: left;
+    color: #f47b2f;
+    font-style: italic;
+    padding-bottom: 5px;
+}
+
+.cm-hipaa-forms-setting-enable-status-wrapper {
+    padding-bottom: 15px;
+}
+
+.cm-hipaa-forms-setting-status-options {
+    padding-bottom: 15px;
+}
+
+#cm-hipaa-custom-status-feedback {
+    color: #f47b2f;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+
+/*** EMAIL NOTIFICATIONS SUB-TAB ***/
+.cm-hipaa-notification-subject-input-placeholder,
+#cm-hipaa-notification-sendto-input,
+#cm-hipaa-notification-subject-input {
+    width: 100%;
+}
+
+.cm-hipaa-notification-input-wrapper {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.cm-hipaa-notification-input-wrapper .cm-hipaa-setting-info {
+    position: relative !important;
+    top: 0 !important;
+    right: 0 !important;
+    margin-left: 10px;
+}
+
+.cm-hipaa-notification-input-wrapper .cm_hipaa_col_50:first-of-type,
+.cm-hipaa-select-form-field-wrapper .cm_hipaa_col_50:first-of-type {
+    padding-right: 2px;
+}
+
+.cm-hipaa-notification-input-wrapper .cm_hipaa_col_50,
+.cm-hipaa-select-form-field-wrapper .cm_hipaa_col_50 {
+    padding-left: 2px;
+    margin-bottom: 0;
+}
+
+.cm-hipaa-notification-input-wrapper label {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    color: #4f7c96;
+}
+
+.cm-hipaa-notification-input-wrapper input[type="text"] {
+    width: 100%;
+}
+
+#cm-hipaa-notification-input {
+    min-height: 350px;
+    width: 100%;
+}
+
+.cm-hipaa-notification-email-variable-info {
+    font-style: italic;
+    padding: 15px 0;
+}
+
+.cm-hipaa-forms-privacy-field-wrapper {
+    margin-bottom: 15px;
+}
+
+.cm-hipaa-forms-privacy-field-wrapper input[type=text],
+.cm-hipaa-forms-privacy-field-wrapper select,
+.cm-hipaa-forms-privacy-field-wrapper textarea {
+    width: 100%;
+}
+
+.cm-hipaa-forms-privacy-field-wrapper textarea {
+    min-height: 300px;
+}
+
+#cm-hipaa-forms-privacy-link {
+    display: none;
+}
+
+#cm-hipaa-forms-privacy-submit {
+    float: right;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+/*** BAA MODAL ***/
+.cm-baa-modal {
+    display: none;
+    position: fixed;
+    background: rgba(0,0,0,0.6);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: 100vh;
+    width: 100vw;
+    /* Safari for iOS < 8 and IE <= 10 */
+    content: 'viewport-units-buggyfill; height: 100vh; width: 100vw;';
+}
+
+.cm-baa-modal-inner {
+    position: absolute;
+    background: #2d576f;
+    color: #fff;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: 80vh;
+    width: 80vw;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+    /* Safari for iOS < 8 and IE <= 10 */
+    content: 'viewport-units-buggyfill; height: 80vh; width: 80vw;';
+}
+
+.cm-baa-modal-inner-top {
+    text-align: right;
+    padding: 10px;
+}
+
+.cm-baa-modal-close {
+    display: inline-block;
+    font-size: 2.5vmin;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.cm-baa-modal-inner-body {
+    text-align: center;
+    padding: 15px;
+}
+
+.cm-baa-modal-form {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    overflow: auto;
+    height: 65vh;
+    padding: 1vh 1vw;
+    /* Safari for iOS < 8 and IE <= 10 */
+    content: 'viewport-units-buggyfill; height: 65vh; padding: 1vh 1vw;';
+}
+
+.cm-baa-form h1 {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.cm-baa-form h2 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cm-baa-form p {
+    font-size: 12px;
+}
+
+.cm-baa-form-inputs {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cm-baa-form-inputs .cm_hipaa_col_50 {
+    vertical-align: middle;
+}
+
+.cm-baa-form-submit-wrapper {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cm-baa-modal-form .cm-ghost-button {
+    color: #fff;
+    border: 1px solid #fff !important;
+    padding: 0.5vh 0.5vw;
+    margin: 15px 0;
+    /* Safari for iOS < 8 and IE <= 10 */
+    content: 'viewport-units-buggyfill; padding: 0.5vh 0.5vw;';
+}
+
+.cm-baa-modal-form .cm-ghost-button:hover {
+    color: #cd3f4a;
+    border: 1px solid #cd3f4a !important;
+}
+
+.cm-baa-form-signature-inner {
+    position: relative;
+}
+
+.cm-baa-form-signature-inner img {
+    position: absolute;
+    height: 10vh;
+    top: 5vh;
+    left: 0;
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    /* Safari for iOS < 8 and IE <= 10 */
+    content: 'viewport-units-buggyfill; height: 10vh; top: 5vh;';
+}
+
+.cm-baa-form-signature-label {
+    font-weight: 100;
+    font-style: italic;
+}
+
+.cm-baa-form-codemonkeys-signature-wrapper {
+    border-bottom: 2px solid #fff;
+    max-width: 90%;
+    margin-bottom: 15px;
+}
+
+.cm-baa-form-codemonkeys-signature-wrapper img {
+    max-width: 100%;
+    margin-bottom: -15px;
+}
+
+.cm-baa-form-agree-wrapper {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cm-hipaa-forms-setting-css-wrapper {
+    vertical-align: top;
+    text-align: right;
+}
+
+.cm-hipaa-forms-setting-css-wrapper label {
+    text-align: center;
+    display: block;
+    font-weight: 600;
+}
+
+.cm-hipaa-forms-setting-css-wrapper textarea {
+    width: 100%;
+    min-width: 40vw;
+    min-height: 400px;
+    /* Safari for iOS < 8 and IE <= 10 */
+    content: 'viewport-units-buggyfill; min-width: 40vw;';
+}
+
+.cm-hipaa-forms-settings-css-tips {
+    font-size: 12px;
+    text-align: left;
+    padding: 10px 30px;
+}
+
+.cm-hipaa-forms-settings-css-tips ul li {
+    list-style: disc;
+    margin-left: 30px;
+}
+
+.cm-hipaa-forms-settings-css-notice {
+    font-style: italic;
+}
+
+/* PLUGIN OPTIONS */
+
+/* SUPPORT TICKETS */
+#cm-hipaa-forms-open-tickets {
+    padding-right: 30px;
+}
+
+.cm-hipaa-forms-submit-tickets input,
+.cm-hipaa-forms-submit-tickets select,
+.cm-hipaa-forms-submit-tickets textarea {
+    width: 80%;
+}
+
+.cm-hipaa-forms-submit-tickets textarea {
+    min-height: 20vh;
+    /* Safari for iOS < 8 and IE <= 10 */
+    content: 'viewport-units-buggyfill; min-height: 20vh;';
+}
+
+.cm-support-ticket-wrapper {
+    border-bottom: 1px solid #999;
+    font-size: 14px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.cm-support-ticket-wrapper .cm-button {
+    background-color: #444;
+    padding: 2px 5px;
+}
+
+.cm-support-ticket-toggle {
+    float: right;
+    border: 1px solid #2d576f;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.cm-support-ticket-submitter {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.cm-support-ticket-body {
+    display: none;
+    margin-top: 5px;
+}
+
+.cm-support-ticket-priority-high {
+    color: #d30130;
+}
+
+.cm-support-ticket-priority-medium {
+    color: #f26f00;
+}
+
+.cm-support-ticket-priority-low {
+    color: green;
+}
+
+.cm-support-ticket-reply-wrapper {
+    margin-top: 15px;
+}
+
+.cm-support-ticket-reply-input {
+    width: 100%;
+    min-height: 100px;
+}
+
+.cm-support-ticket-reply-buttons-wrapper {
+    margin-top: 5px;
+}
+
+.cm-support-ticket-reply-submit {
+    float: left;
+}
+
+.cm-support-ticket-reply-submitter {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.cm-support-ticket-close {
+    float: right;
+}
+
+.cm-support-ticket-replies-wrapper {
+    margin-top: 15px;
+}
+
+.cm-support-ticket-reply {
+    border-left: 2px solid blue;
+    padding-left: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.cm-support-ticket-reply:nth-of-type(even) {
+    background: #eff8e6;
+}
+
+#cm-hipaa-forms-submit-ticket-notice, .cm-support-ticket-reply-notice {
+    margin-top: 15px;
+}
+
+/*** CALDERA SUBMITTED FORM DEFAULT STYLES ***/
+.cm-hipaa-submitted-form-fields .row {
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+    max-width: 100%
+}
+
+.cm-hipaa-submitted-form-fields .clearfix:after, .cm-hipaa-submitted-form-fields .clearfix:before, .cm-hipaa-submitted-form-fields .container-fluid:after, .cm-hipaa-submitted-form-fields .container-fluid:before, .cm-hipaa-submitted-form-fields .container:after, .cm-hipaa-submitted-form-fields .container:before, .cm-hipaa-submitted-form-fields .row:after, .cm-hipaa-submitted-form-fields .row:before {
+    content: " ";
+    display: table
+}
+
+.cm-hipaa-submitted-form-fields .col-xs-12 {
+    width: 100%
+}
+
+.cm-hipaa-submitted-form-fields .col-xs-11 {
+    width: 91.66666667%
+}
+
+.cm-hipaa-submitted-form-fields .col-xs-10 {
+    width: 83.33333333%
+}
+
+.cm-hipaa-submitted-form-fields .col-xs-9 {
+    width: 75%
+}
+
+.cm-hipaa-submitted-form-fields .col-xs-8 {
+    width: 66.66666667%
+}
+
+.cm-hipaa-submitted-form-fields .col-xs-7 {
+    width: 58.33333333%
+}
+
+.cm-hipaa-submitted-form-fields .col-xs-6 {
+    width: 50%
+}
+
+.cm-hipaa-submitted-form-fields .col-xs-5 {
+    width: 41.66666667%
+}
+
+.cm-hipaa-submitted-form-fields .col-xs-4 {
+    width: 33.33333333%
+}
+
+.cm-hipaa-submitted-form-fields .col-xs-3 {
+    width: 25%
+}
+
+.cm-hipaa-submitted-form-fields .col-xs-2 {
+    width: 16.66666667%
+}
+
+.cm-hipaa-submitted-form-fields .col-xs-1 {
+    width: 8.33333333%
+}
+
+.cm-hipaa-submitted-form-fields .col-sm-12 {
+    width: 100%
+}
+
+.cm-hipaa-submitted-form-fields .col-sm-11 {
+    width: 91.66666667%
+}
+
+.cm-hipaa-submitted-form-fields .col-sm-10 {
+    width: 83.33333333%
+}
+
+.cm-hipaa-submitted-form-fields .col-sm-9 {
+    width: 75%
+}
+
+.cm-hipaa-submitted-form-fields .col-sm-8 {
+    width: 66.66666667%
+}
+
+.cm-hipaa-submitted-form-fields .col-sm-7 {
+    width: 58.33333333%
+}
+
+.cm-hipaa-submitted-form-fields .col-sm-6 {
+    width: 50%
+}
+
+.cm-hipaa-submitted-form-fields .col-sm-5 {
+    width: 41.66666667%
+}
+
+.cm-hipaa-submitted-form-fields .col-sm-4 {
+    width: 33.33333333%
+}
+
+.cm-hipaa-submitted-form-fields .col-sm-3 {
+    width: 25%
+}
+
+.cm-hipaa-submitted-form-fields .col-sm-2 {
+    width: 16.66666667%
+}
+
+.cm-hipaa-submitted-form-fields .col-sm-1 {
+    width: 8.33333333%
+}
+
+.cm-hipaa-submitted-form-fields .col-sm-1, .cm-hipaa-submitted-form-fields .col-sm-10, .cm-hipaa-submitted-form-fields .col-sm-11, .cm-hipaa-submitted-form-fields .col-sm-12, .cm-hipaa-submitted-form-fields .col-sm-2, .cm-hipaa-submitted-form-fields .col-sm-3, .cm-hipaa-submitted-form-fields .col-sm-4, .cm-hipaa-submitted-form-fields .col-sm-5, .cm-hipaa-submitted-form-fields .col-sm-6, .cm-hipaa-submitted-form-fields .col-sm-7, .cm-hipaa-submitted-form-fields .col-sm-8, .cm-hipaa-submitted-form-fields .col-sm-9 {
+    float: left
+}
+
+.cm-hipaa-submitted-form-fields .col-lg-1, .cm-hipaa-submitted-form-fields .col-lg-10, .cm-hipaa-submitted-form-fields .col-lg-11, .cm-hipaa-submitted-form-fields .col-lg-12, .cm-hipaa-submitted-form-fields .col-lg-2, .cm-hipaa-submitted-form-fields .col-lg-3, .cm-hipaa-submitted-form-fields .col-lg-4, .cm-hipaa-submitted-form-fields .col-lg-5, .cm-hipaa-submitted-form-fields .col-lg-6, .cm-hipaa-submitted-form-fields .col-lg-7, .cm-hipaa-submitted-form-fields .col-lg-8, .cm-hipaa-submitted-form-fields .col-lg-9, .cm-hipaa-submitted-form-fields .col-md-1, .cm-hipaa-submitted-form-fields .col-md-10, .cm-hipaa-submitted-form-fields .col-md-11, .cm-hipaa-submitted-form-fields .col-md-12, .cm-hipaa-submitted-form-fields .col-md-2, .cm-hipaa-submitted-form-fields .col-md-3, .cm-hipaa-submitted-form-fields .col-md-4, .cm-hipaa-submitted-form-fields .col-md-5, .cm-hipaa-submitted-form-fields .col-md-6, .cm-hipaa-submitted-form-fields .col-md-7, .cm-hipaa-submitted-form-fields .col-md-8, .cm-hipaa-submitted-form-fields .col-md-9, .cm-hipaa-submitted-form-fields .col-sm-1, .cm-hipaa-submitted-form-fields .col-sm-10, .cm-hipaa-submitted-form-fields .col-sm-11, .cm-hipaa-submitted-form-fields .col-sm-12, .cm-hipaa-submitted-form-fields .col-sm-2, .cm-hipaa-submitted-form-fields .col-sm-3, .cm-hipaa-submitted-form-fields .col-sm-4, .cm-hipaa-submitted-form-fields .col-sm-5, .cm-hipaa-submitted-form-fields .col-sm-6, .cm-hipaa-submitted-form-fields .col-sm-7, .cm-hipaa-submitted-form-fields .col-sm-8, .cm-hipaa-submitted-form-fields .col-sm-9, .cm-hipaa-submitted-form-fields .col-xs-1, .cm-hipaa-submitted-form-fields .col-xs-10, .cm-hipaa-submitted-form-fields .col-xs-11, .cm-hipaa-submitted-form-fields .col-xs-12, .cm-hipaa-submitted-form-fields .col-xs-2, .cm-hipaa-submitted-form-fields .col-xs-3, .cm-hipaa-submitted-form-fields .col-xs-4, .cm-hipaa-submitted-form-fields .col-xs-5, .cm-hipaa-submitted-form-fields .col-xs-6, .cm-hipaa-submitted-form-fields .col-xs-7, .cm-hipaa-submitted-form-fields .col-xs-8, .cm-hipaa-submitted-form-fields .col-xs-9 {
+    position: relative;
+    padding-left: 7.5px;
+    padding-right: 7.5px
+}
+
+.cm-hipaa-submitted-form-fields *, .cm-hipaa-submitted-form-fields :after, .cm-hipaa-submitted-form-fields :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+.cm-hipaa-submitted-form-fields .clearfix:after, .cm-hipaa-submitted-form-fields .container-fluid:after, .cm-hipaa-submitted-form-fields .container:after, .cm-hipaa-submitted-form-fields .row:after {
+    clear: both
+}
+
+.cm-hipaa-submitted-form-fields label,
+.cm-hipaa-submitted-form-fields .gfield_label{
+    font-weight: 700;
+    cursor: auto
+}
+
+.cm-hipaa-forms-privacy-statement, .cm-hipaa-submitted-form-fields .form-group {
+    padding: 10px
+}
+
+
+/*** GRAVITY SPECIFIC STYLES ***/
+@media only screen and (min-width: 641px) {
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_inline {
+        vertical-align: top;
+        width: auto !important;
+        margin: 0;
+        padding-right: 16px;
+        float: none !important;
+        display: -moz-inline-stack;
+        display: inline-block
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_inline input[type=email].large, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_inline input[type=email].medium, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_inline input[type=email].small, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_inline input[type=number].large, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_inline input[type=number].medium, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_inline input[type=number].small, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_inline input[type=password].large, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_inline input[type=password].medium, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_inline input[type=password].small, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_inline input[type=tel].large, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_inline input[type=tel].medium, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_inline input[type=tel].small, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_inline input[type=text].large, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_inline input[type=text].medium, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_inline input[type=text].small, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_inline input[type=url].large, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_inline input[type=url].medium, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_inline input[type=url].small {
+        width: 100%
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_inline input[type=text].datepicker.medium {
+        width: 96px !important
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_inline select, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_inline textarea {
+        width: 100%
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_inline div.gfield_time_hour input[type=text], .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_inline div.gfield_time_minute input[type=text] {
+        width: 70% !important
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_inline div.gfield_date_day, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_inline div.gfield_date_month, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_inline div.gfield_date_year, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_inline div.gfield_time_hour, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_inline div.gfield_time_minute {
+        width: 50px
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_inline div.gfield_time_ampm {
+        width: auto
+    }
+
+    .cm-hipaa-submitted-form-fields li.gf_inline div.ginput_container {
+        white-space: nowrap !important
+    }
+
+    .cm-hipaa-submitted-form-fields li.gf_inline div.ginput_container.ginput_container_date label {
+        display: block !important
+    }
+
+    .cm-hipaa-submitted-form-fields li.gfield.gfield_error.gf_inline {
+        margin-right: 16px;
+        padding-right: 0
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_left_half, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_right_half {
+        display: -moz-inline-stack;
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+        padding-right: 16px;
+        float: none
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_left_half .ginput_container:not(.gfield_time_hour):not(.gfield_time_minute):not(.gfield_time_ampm):not(.ginput_container_date):not(.ginput_quantity):not(ul.gfield_radio li input):not(ul.gfield_checkbox li input):not(.datepicker), .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_right_half .ginput_container:not(.gfield_time_hour):not(.gfield_time_minute):not(.gfield_time_ampm):not(.ginput_container_date):not(.ginput_quantity):not(ul.gfield_radio li input):not(ul.gfield_checkbox li input):not(.datepicker) {
+        width: 100% !important;
+        margin: 8px 0 0;
+        padding-left: 0;
+        padding-right: 0
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_left_half:before {
+        content: "";
+        display: block;
+        clear: both
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_right_half:after {
+        content: "";
+        display: table;
+        clear: both
+    }
+
+    .cm-hipaa-submitted-form-fields.gform_validation_error .top_label li.gfield.gfield_error.gf_left_half, .cm-hipaa-submitted-form-fields.gform_validation_error .top_label li.gfield.gfield_error.gf_right_half {
+        max-width: calc(50% - 16px);
+        padding-right: 0
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gfield_error.gf_left_half {
+        margin-right: 16px
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_left_half div:not(.ginput_container_date) input.large, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_left_half div:not(.ginput_container_date) input.medium, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_left_half div:not(.ginput_container_date) select.large, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_left_half div:not(.ginput_container_date) select.medium, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_right_half div:not(.ginput_container_date) input.large, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_right_half div:not(.ginput_container_date) input.medium, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_right_half div:not(.ginput_container_date) select.large, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_right_half div:not(.ginput_container_date) select.medium {
+        width: 100%
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_left_half textarea, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_right_half textarea {
+        width: 98%
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_left_half input.small, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_right_half input.small {
+        width: 35%
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_left_half + li.gfield.gsection.gf_left_half, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_left_half + li.gfield.gsection.gf_right_half, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_left_half + li.gsection, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_right_half + li.gfield.gsection.gf_left_half, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_right_half + li.gfield.gsection.gf_right_half, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_right_half + li.gsection, .cm-hipaa-submitted-form-fields .top_label li.gfield.gsection.gf_left_half + li.gfield.gsection.gf_left_half, .cm-hipaa-submitted-form-fields .top_label li.gfield.gsection.gf_right_half + li.gfield.gsection.gf_left_half, .cm-hipaa-submitted-form-fields .top_label li.gfield.gsection.gf_right_half + li.gfield.gsection.gf_right_half {
+        padding: 16px 0 8px
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gsection.gf_left_half + li.gfield.gsection.gf_right_half {
+        padding: 0 0 8px
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_first_quarter + li.gsection, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_fourth_quarter + li.gsection, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_left_third + li.gsection, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_right_third + li.gsection, .cm-hipaa-submitted-form-fields .top_label li.gfield.gsection.gf_left_half + li.gfield.gsection.gf_right_half + li.gfield.gsection.gf_left_half + li.gfield.gsection.gf_right_half {
+        padding: 16px 0 8px
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_left_half + .gform_footer, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_left_half + li.gfield, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_right_half + .gform_footer, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_right_half + li.gfield {
+        clear: both
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_left_third, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_middle_third, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_right_third {
+        display: -moz-inline-stack;
+        display: inline-block;
+        vertical-align: top;
+        float: none;
+        margin-bottom: 8px
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_left_third:not(.gfield_time_hour):not(.gfield_time_minute):not(.gfield_time_ampm), .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_middle_third:not(.gfield_time_hour):not(.gfield_time_minute):not(.gfield_time_ampm) {
+        width: 33.3%
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_right_third:not(.gfield_time_hour):not(.gfield_time_minute):not(.gfield_time_ampm) {
+        width: 33.4%
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_left_third div:not(.ginput_container_date) input.large, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_left_third div:not(.ginput_container_date) input.medium, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_left_third div:not(.ginput_container_date) select.large, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_left_third div:not(.ginput_container_date) select.medium, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_middle_third div:not(.ginput_container_date) input.large, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_middle_third div:not(.ginput_container_date) input.medium, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_middle_third div:not(.ginput_container_date) select.large, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_middle_third div:not(.ginput_container_date) select.medium, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_right_third div:not(.ginput_container_date) input.large, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_right_third div:not(.ginput_container_date) input.medium, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_right_third div:not(.ginput_container_date) select.large, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_right_third div:not(.ginput_container_date) select.medium {
+        width: 100%
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_left_third div:not(.ginput_container_date) input:not([type=radio]):not([type=checkbox]):not(.ginput_quantity):not(ul.gfield_radio li input):not(ul.gfield_checkbox li input), .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_left_third div:not(.ginput_container_date) select, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_middle_third div:not(.ginput_container_date) input:not([type=radio]):not([type=checkbox]):not(.ginput_quantity):not(ul.gfield_radio li input):not(ul.gfield_checkbox li input), .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_middle_third div:not(.ginput_container_date) select, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_right_third div:not(.ginput_container_date) input:not([type=radio]):not([type=checkbox]):not(.ginput_quantity):not(ul.gfield_radio li input):not(ul.gfield_checkbox li input), .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_right_third div:not(.ginput_container_date) select {
+        width: 100% !important
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gfield_error.gf_left_third, .cm-hipaa-submitted-form-fields .top_label li.gfield.gfield_error.gf_middle_third {
+        width: calc(33.3% - 24px) !important;
+        margin-right: 16px
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gfield_error.gf_right_third {
+        width: 33.4%
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_right_third:after {
+        content: "";
+        display: table;
+        clear: both
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_left_third + .gform_footer, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_left_third + li.gfield, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_middle_third + .gform_footer, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_middle_third + li.gfield, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_right_third + .gform_footer, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_right_third + li.gfield {
+        clear: both
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_first_quarter:not(.gfield_time_hour):not(.gfield_time_minute):not(.gfield_time_ampm), .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_fourth_quarter:not(.gfield_time_hour):not(.gfield_time_minute):not(.gfield_time_ampm), .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_second_quarter:not(.gfield_time_hour):not(.gfield_time_minute):not(.gfield_time_ampm), .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_third_quarter:not(.gfield_time_hour):not(.gfield_time_minute):not(.gfield_time_ampm) {
+        width: 25%;
+        display: -moz-inline-stack;
+        display: inline-block;
+        vertical-align: top;
+        float: none
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_first_quarter, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_fourth_quarter, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_second_quarter, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_third_quarter {
+        margin-bottom: 8px
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_first_quarter div:not(.ginput_container_date) input:not([type=radio]):not([type=checkbox]), .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_first_quarter div:not(.ginput_container_date) select, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_fourth_quarter div:not(.ginput_container_date) input:not([type=radio]):not([type=checkbox]), .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_fourth_quarter div:not(.ginput_container_date) select, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_second_quarter div:not(.ginput_container_date) input:not([type=radio]):not([type=checkbox]), .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_second_quarter div:not(.ginput_container_date) select, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_third_quarter div:not(.ginput_container_date) input:not([type=radio]):not([type=checkbox]), .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_third_quarter div:not(.ginput_container_date) select {
+        width: 100% !important
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gfield_error.gf_first_quarter, .cm-hipaa-submitted-form-fields .top_label li.gfield.gfield_error.gf_fourth_quarter, .cm-hipaa-submitted-form-fields .top_label li.gfield.gfield_error.gf_second_quarter, .cm-hipaa-submitted-form-fields .top_label li.gfield.gfield_error.gf_third_quarter {
+        width: 24.5%
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_fourth_quarter:after {
+        content: "";
+        display: table;
+        clear: both
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_first_quarter input.large, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_first_quarter input.medium, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_first_quarter select.large, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_first_quarter select.medium, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_fourth_quarter input.large, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_fourth_quarter input.medium, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_fourth_quarter select.large, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_fourth_quarter select.medium, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_second_quarter input.large, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_second_quarter input.medium, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_second_quarter select.large, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_second_quarter select.medium, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_third_quarter input.large, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_third_quarter input.medium, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_third_quarter select.large, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_third_quarter select.medium {
+        width: 97.5%
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_first_quarter + .gform_footer, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_first_quarter + li.gfield, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_fourth_quarter + .gform_footer, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_fourth_quarter + li.gfield, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_second_quarter + .gform_footer, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_second_quarter + li.gfield, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_third_quarter + .gform_footer, .cm-hipaa-submitted-form-fields .top_label li.gfield.gf_third_quarter + li.gfield {
+        clear: both
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li ul.gfield_checkbox, .cm-hipaa-submitted-form-fields .top_label li ul.gfield_radio {
+        width: calc(100% + 16px)
+    }
+
+    .cm-hipaa-submitted-form-fields ul.gform_fields:not(.top_label) li ul.gfield_checkbox, .cm-hipaa-submitted-form-fields ul.gform_fields:not(.top_label) li ul.gfield_radio {
+        width: calc(70% + 16px)
+    }
+
+    .cm-hipaa-submitted-form-fields li.gfield.gf_list_2col ul.gfield_checkbox li, .cm-hipaa-submitted-form-fields li.gfield.gf_list_2col ul.gfield_radio li {
+        width: 50%;
+        display: -moz-inline-stack;
+        display: inline-block;
+        margin: 0;
+        padding-right: 16px;
+        min-height: 28px;
+        vertical-align: top;
+        font-size: 90%
+    }
+
+    .cm-hipaa-submitted-form-fields li.gfield.gf_list_3col ul.gfield_checkbox li, .cm-hipaa-submitted-form-fields li.gfield.gf_list_3col ul.gfield_radio li {
+        width: 33.3%;
+        display: -moz-inline-stack;
+        display: inline-block;
+        margin: 0 0 2px;
+        padding-right: 16px;
+        min-height: 28px;
+        vertical-align: top;
+        font-size: 90%
+    }
+
+    .cm-hipaa-submitted-form-fields li.gfield.gf_list_2col ul.gfield_checkbox li label, .cm-hipaa-submitted-form-fields li.gfield.gf_list_2col ul.gfield_radio li label, .cm-hipaa-submitted-form-fields li.gfield.gf_list_3col ul.gfield_checkbox li label, .cm-hipaa-submitted-form-fields li.gfield.gf_list_3col ul.gfield_radio li label, .cm-hipaa-submitted-form-fields li.gfield.gf_list_4col ul.gfield_checkbox li label, .cm-hipaa-submitted-form-fields li.gfield.gf_list_4col ul.gfield_radio li label {
+        max-width: 75%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        vertical-align: middle
+    }
+
+    .cm-hipaa-submitted-form-fields li.gfield.gf_list_4col ul.gfield_checkbox li, .cm-hipaa-submitted-form-fields li.gfield.gf_list_4col ul.gfield_radio li {
+        width: 25%;
+        display: -moz-inline-stack;
+        display: inline-block;
+        margin: 0;
+        padding-right: 16px;
+        min-height: 28px;
+        vertical-align: top;
+        font-size: 90%
+    }
+
+    .cm-hipaa-submitted-form-fields li.gfield.gf_list_5col ul.gfield_checkbox li, .cm-hipaa-submitted-form-fields li.gfield.gf_list_5col ul.gfield_radio li {
+        width: 20%;
+        display: -moz-inline-stack;
+        display: inline-block;
+        margin: 0;
+        padding-right: 16px;
+        min-height: 28px;
+        vertical-align: top;
+        font-size: 90%
+    }
+
+    .cm-hipaa-submitted-form-fields ul.gform_fields:not(.top_label) li.gf_list_2col_vertical label.gfield_label, .cm-hipaa-submitted-form-fields ul.gform_fields:not(.top_label) li.gfield.gf_list_2col label.gfield_label, .cm-hipaa-submitted-form-fields ul.gform_fields:not(.top_label) li.gfield.gf_list_3col label.gfield_label, .cm-hipaa-submitted-form-fields ul.gform_fields:not(.top_label) li.gfield.gf_list_4col label.gfield_label, .cm-hipaa-submitted-form-fields ul.gform_fields:not(.top_label) li.gfield.gf_list_5col label.gfield_label, .cm-hipaa-submitted-form-fields ul.gform_fields:not(.top_label) li.gfield.gf_list_inline label.gfield_label {
+        margin: 0 0 10px
+    }
+
+    .cm-hipaa-submitted-form-fields li.gfield.gf_list_2col ul.gfield_checkbox, .cm-hipaa-submitted-form-fields li.gfield.gf_list_2col ul.gfield_radio, .cm-hipaa-submitted-form-fields li.gfield.gf_list_3col ul.gfield_checkbox, .cm-hipaa-submitted-form-fields li.gfield.gf_list_3col ul.gfield_radio, .cm-hipaa-submitted-form-fields li.gfield.gf_list_4col ul.gfield_checkbox, .cm-hipaa-submitted-form-fields li.gfield.gf_list_4col ul.gfield_radio, .cm-hipaa-submitted-form-fields li.gfield.gf_list_5col ul.gfield_checkbox, .cm-hipaa-submitted-form-fields li.gfield.gf_list_5col ul.gfield_radio {
+        overflow: hidden
+    }
+
+    .cm-hipaa-submitted-form-fields li.gf_list_2col_vertical .ginput_container_checkbox ul.gfield_checkbox, .cm-hipaa-submitted-form-fields li.gf_list_3col_vertical .ginput_container_checkbox ul.gfield_checkbox, .cm-hipaa-submitted-form-fields li.gf_list_4col_vertical .ginput_container_checkbox ul.gfield_checkbox, .cm-hipaa-submitted-form-fields li.gf_list_5col_vertical .ginput_container_checkbox ul.gfield_checkbox {
+        -webkit-column-gap: 16px;
+        -moz-column-gap: 16px;
+        column-gap: 16px
+    }
+
+    .cm-hipaa-submitted-form-fields li.gf_list_2col_vertical .ginput_container_checkbox ul.gfield_checkbox, .cm-hipaa-submitted-form-fields li.gf_list_2col_vertical .ginput_container_radio ul.gfield_radio {
+        width: calc(100% - 16px);
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2
+    }
+
+    .cm-hipaa-submitted-form-fields li.gf_list_3col_vertical .ginput_container_checkbox ul.gfield_checkbox, .cm-hipaa-submitted-form-fields li.gf_list_3col_vertical .ginput_container_radio ul.gfield_radio {
+        width: calc(100% - 8px);
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3
+    }
+
+    .cm-hipaa-submitted-form-fields li.gf_list_4col_vertical .ginput_container_checkbox ul.gfield_checkbox, .cm-hipaa-submitted-form-fields li.gf_list_4col_vertical .ginput_container_radio ul.gfield_radio {
+        width: calc(100% - 8px);
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4
+    }
+
+    .cm-hipaa-submitted-form-fields li.gf_list_5col_vertical .ginput_container_checkbox ul.gfield_checkbox, .cm-hipaa-submitted-form-fields li.gf_list_5col_vertical .ginput_container_radio ul.gfield_radio {
+        width: calc(100% - 8px);
+        -webkit-column-count: 5;
+        -moz-column-count: 5;
+        column-count: 5
+    }
+
+    .cm-hipaa-submitted-form-fields li.gf_list_2col_vertical .ginput_container_checkbox ul.gfield_checkbox li label, .cm-hipaa-submitted-form-fields li.gf_list_2col_vertical .ginput_container_radio ul.gfield_radio li label, .cm-hipaa-submitted-form-fields li.gf_list_3col_vertical .ginput_container_checkbox ul.gfield_checkbox li label, .cm-hipaa-submitted-form-fields li.gf_list_3col_vertical .ginput_container_radio ul.gfield_radio li label, .cm-hipaa-submitted-form-fields li.gf_list_4col_vertical .ginput_container_checkbox ul.gfield_checkbox li label, .cm-hipaa-submitted-form-fields li.gf_list_4col_vertical .ginput_container_radio ul.gfield_radio li label, .cm-hipaa-submitted-form-fields li.gf_list_5col_vertical .ginput_container_checkbox ul.gfield_checkbox li label, .cm-hipaa-submitted-form-fields li.gf_list_5col_vertical .ginput_container_radio ul.gfield_radio li label {
+        max-width: 75%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis
+    }
+
+    .cm-hipaa-submitted-form-fields li.gfield.gf_list_height_25 ul.gfield_checkbox li, .cm-hipaa-submitted-form-fields li.gfield.gf_list_height_25 ul.gfield_radio li {
+        height: 25px
+    }
+
+    .cm-hipaa-submitted-form-fields li.gfield.gf_list_height_50 ul.gfield_checkbox li, .cm-hipaa-submitted-form-fields li.gfield.gf_list_height_50 ul.gfield_radio li {
+        height: 50px
+    }
+
+    .cm-hipaa-submitted-form-fields li.gfield.gf_list_height_75 ul.gfield_checkbox li, .cm-hipaa-submitted-form-fields li.gfield.gf_list_height_75 ul.gfield_radio li {
+        height: 75px
+    }
+
+    .cm-hipaa-submitted-form-fields li.gfield.gf_list_height_100 ul.gfield_checkbox li, .cm-hipaa-submitted-form-fields li.gfield.gf_list_height_100 ul.gfield_radio li {
+        height: 100px
+    }
+
+    .cm-hipaa-submitted-form-fields li.gfield.gf_list_height_125 ul.gfield_checkbox li, .cm-hipaa-submitted-form-fields li.gfield.gf_list_height_125 ul.gfield_radio li {
+        height: 125px
+    }
+
+    .cm-hipaa-submitted-form-fields li.gfield.gf_list_height_150 ul.gfield_checkbox li, .cm-hipaa-submitted-form-fields li.gfield.gf_list_height_150 ul.gfield_radio li {
+        height: 150px
+    }
+
+    .cm-hipaa-submitted-form-fields li.gf_list_inline ul.gfield_checkbox li, .cm-hipaa-submitted-form-fields li.gf_list_inline ul.gfield_radio li {
+        width: auto !important;
+        float: none !important;
+        margin: 0 8px 10px 0;
+        display: -moz-inline-stack;
+        display: inline-block
+    }
+
+    html:not[dir=rtl] .cm-hipaa-submitted-form-fields li.gf_list_inline ul.gfield_checkbox li, html:not[dir=rtl] .cm-hipaa-submitted-form-fields li.gf_list_inline ul.gfield_radio li {
+        padding-right: 16px !important
+    }
+
+    html[dir=rtl] .cm-hipaa-submitted-form-fields li.gf_list_inline ul.gfield_checkbox li, html[dir=rtl] .cm-hipaa-submitted-form-fields li.gf_list_inline ul.gfield_radio li {
+        padding-left: 16px !important
+    }
+
+    .cm-hipaa-submitted-form-fields li.gf_hide_ampm div.gfield_time_ampm {
+        display: none !important
+    }
+
+    .cm-hipaa-submitted-form-fields li.gsection.gf_scroll_text {
+        height: 240px;
+        width: calc(100% - 16px);
+        padding: 16px;
+        background-color: #fff;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        border: 1px solid #CCC;
+        border-bottom: 1px solid #CCC !important
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gsection.gf_scroll_text h2.gsection_title {
+        margin: 10px 10px 0 8px !important
+    }
+
+    .cm-hipaa-submitted-form-fields.gf_browser_chrome .top_label li.gsection.gf_scroll_text h2.gsection_title, .cm-hipaa-submitted-form-fields.gf_browser_gecko .top_label li.gsection.gf_scroll_text h2.gsection_title {
+        margin: 0 10px 0 8px !important
+    }
+
+    .cm-hipaa-submitted-form-fields .top_label li.gsection.gf_scroll_text .gsection_description {
+        margin: 10px;
+        font-size: 12px
+    }
+
+    .cm-hipaa-submitted-form-fields div.gform_ul.gform_fields .top_label li.gfield.gsection.gf_scroll_text div.gsection_description ul li, .cm-hipaa-submitted-form-fields form div.gform_ul.gform_fields .top_label li.gfield.gsection.gf_scroll_text div.gsection_description ul li {
+        list-style-type: disc !important;
+        margin: 0 0 8px;
+        overflow: visible;
+        padding-left: 0
+    }
+
+    .cm-hipaa-submitted-form-fields div.gform_ul.gform_fields .top_label li.gfield.gsection.gf_scroll_text div.gsection_description ul, .cm-hipaa-submitted-form-fields form div.gform_ul.gform_fields .top_label li.gfield.gsection.gf_scroll_text div.gsection_description ul {
+        list-style-type: disc !important;
+        margin: 16px 0 16px 18px;
+        padding-left: 0
+    }
+
+    .cm-hipaa-submitted-form-fields div.gform_ul.gform_fields .top_label li.gfield.gsection.gf_scroll_text div.gsection_description ol li, .cm-hipaa-submitted-form-fields form div.gform_ul.gform_fields .top_label li.gfield.gsection.gf_scroll_text div.gsection_description ol li {
+        list-style-type: decimal !important;
+        overflow: visible;
+        margin: 0 0 8px;
+        padding-left: 0
+    }
+
+    .cm-hipaa-submitted-form-fields div.gform_ul.gform_fields .top_label li.gfield.gsection.gf_scroll_text div.gsection_description ol, .cm-hipaa-submitted-form-fields form div.gform_ul.gform_fields .top_label li.gfield.gsection.gf_scroll_text div.gsection_description ol {
+        list-style-type: decimal !important;
+        margin: 16px 0 18px 32px;
+        padding-left: 0
+    }
+
+    .cm-hipaa-submitted-form-fields div.gform_ul.gform_fields .top_label li.gfield.gsection.gf_scroll_text div.gsection_description ol li ul, .cm-hipaa-submitted-form-fields form div.gform_ul.gform_fields .top_label li.gfield.gsection.gf_scroll_text div.gsection_description ol li ul li {
+        list-style-type: disc !important;
+        padding-left: 0
+    }
+
+    .cm-hipaa-submitted-form-fields div.gform_ul.gform_fields .top_label li.gfield.gsection.gf_scroll_text div.gsection_description ol li ul {
+        margin: 16px 0 16px 18px
+    }
+
+    .cm-hipaa-submitted-form-fields form div.gform_ul.gform_fields .top_label li.gfield.gsection.gf_scroll_text div.gsection_description ol li ul li {
+        margin: 0 0 8px
+    }
+
+    .cm-hipaa-submitted-form-fields div.gform_ul.gform_fields .top_label li.gfield.gsection.gf_scroll_text div.gsection_description dl {
+        margin: 0 0 18px;
+        padding-left: 0
+    }
+
+    .cm-hipaa-submitted-form-fields div.gform_ul.gform_fields .top_label li.gfield.gsection.gf_scroll_text div.gsection_description dl dt {
+        font-weight: 700
+    }
+
+    .cm-hipaa-submitted-form-fields div.gform_ul.gform_fields .top_label li.gfield.gsection.gf_scroll_text div.gsection_description dl dd {
+        margin: 0 0 16px 18px
+    }
+
+    .cm-hipaa-submitted-form-fields li.gfield.gfield_html.gf_alert_blue, .cm-hipaa-submitted-form-fields li.gfield.gfield_html.gf_alert_gray, .cm-hipaa-submitted-form-fields li.gfield.gfield_html.gf_alert_green, .cm-hipaa-submitted-form-fields li.gfield.gfield_html.gf_alert_red, .cm-hipaa-submitted-form-fields li.gfield.gfield_html.gf_alert_yellow {
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        margin: 20px 0 !important;
+        padding: 20px !important
+    }
+
+    .cm-hipaa-submitted-form-fields li.gfield.gfield_html.gf_alert_green {
+        border: 1px solid #97b48a;
+        background-color: #CBECA0;
+        text-shadow: #DFB 1px 1px;
+        color: #030
+    }
+
+    .cm-hipaa-submitted-form-fields li.gfield.gfield_html.gf_alert_red {
+        border: 1px solid #CFADB3;
+        background-color: #FAF2F5;
+        text-shadow: #FFF 1px 1px;
+        color: #832525
+    }
+
+    .cm-hipaa-submitted-form-fields li.gfield.gfield_html.gf_alert_yellow {
+        border: 1px solid #E6DB55;
+        background-color: #FFFBCC;
+        text-shadow: #FCFAEA 1px 1px;
+        color: #222
+    }
+
+    .cm-hipaa-submitted-form-fields li.gfield.gfield_html.gf_alert_gray {
+        border: 1px solid #CCC;
+        background-color: #EEE;
+        text-shadow: #FFF 1px 1px;
+        color: #424242
+    }
+
+    .cm-hipaa-submitted-form-fields li.gfield.gfield_html.gf_alert_blue {
+        border: 1px solid #a7c2e7;
+        background-color: #D1E4F3;
+        text-shadow: #E0F1FF 1px 1px;
+        color: #314475
+    }
+
+    div.gform_confirmation_wrapper.gf_confirmation_simple_yellow {
+        margin: 30px 0;
+        max-width: 99%;
+        border-top: 1px solid #E6DB55;
+        border-bottom: 1px solid #E6DB55;
+        padding: 32px;
+        background-color: #FFFBCC;
+        color: #424242;
+        font-size: 25px
+    }
+
+    div.gform_confirmation_wrapper.gf_confirmation_simple_gray {
+        margin: 30px 0;
+        max-width: 99%;
+        border-top: 1px solid #CCC;
+        border-bottom: 1px solid #CCC;
+        padding: 32px;
+        background-color: #EAEAEA;
+        color: #424242;
+        font-size: 25px
+    }
+
+    div.gform_confirmation_wrapper.gf_confirmation_yellow_gradient {
+        position: relative;
+        background-color: #FFFBD2;
+        margin: 30px 0;
+        border: 1px solid #E6DB55;
+        -webkit-box-shadow: 0 0 5px rgba(221, 215, 131, .75);
+        -moz-box-shadow: 0 0 5px rgba(221, 215, 131, .75);
+        box-shadow: 0 0 5px rgba(221, 215, 131, .75)
+    }
+
+    div.gform_confirmation_wrapper.gf_confirmation_yellow_gradient div.gforms_confirmation_message {
+        margin: 0;
+        padding: 40px;
+        max-width: 99%;
+        font-size: 28px;
+        border-top: 2px solid #FFF;
+        border-bottom: 1px solid #E6DB55;
+        color: #424242;
+        background: #fffce5;
+        background: -moz-linear-gradient(top, #fffce5 0, #fff9bf 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fffce5), color-stop(100%, #fff9bf));
+        background: -webkit-linear-gradient(top, #fffce5 0, #fff9bf 100%);
+        background: -o-linear-gradient(top, #fffce5 0, #fff9bf 100%);
+        background: -ms-linear-gradient(top, #fffce5 0, #fff9bf 100%);
+        background: linear-gradient(to bottom, #fffce5 0, #fff9bf 100%)
+    }
+
+    div.gform_confirmation_wrapper.gf_confirmation_green_gradient {
+        position: relative;
+        background-color: #f1fcdf;
+        margin: 30px 0;
+        border: 1px solid #a7c37c;
+        -webkit-box-shadow: 0 0 5px rgba(86, 122, 86, .4);
+        -moz-box-shadow: 0 0 5px rgba(86, 122, 86, .4);
+        box-shadow: 0 0 5px rgba(86, 122, 86, .4)
+    }
+
+    div.gform_confirmation_wrapper.gf_confirmation_green_gradient div.gforms_confirmation_message {
+        margin: 0;
+        padding: 40px;
+        max-width: 99%;
+        font-size: 28px;
+        border-top: 2px solid #effade;
+        border-bottom: 1px solid #a7c37c;
+        text-shadow: #DFB 1px 1px;
+        color: #030;
+        background: #dbf2b7;
+        background: -moz-linear-gradient(top, rgba(219, 242, 183, 1) 0, rgba(180, 208, 136, 1) 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(219, 242, 183, 1)), color-stop(100%, rgba(180, 208, 136, 1)));
+        background: -webkit-linear-gradient(top, rgba(219, 242, 183, 1) 0, rgba(180, 208, 136, 1) 100%);
+        background: -o-linear-gradient(top, rgba(219, 242, 183, 1) 0, rgba(180, 208, 136, 1) 100%);
+        background: -ms-linear-gradient(top, rgba(219, 242, 183, 1) 0, rgba(180, 208, 136, 1) 100%);
+        background: linear-gradient(to bottom, rgba(219, 242, 183, 1) 0, rgba(180, 208, 136, 1) 100%)
+    }
+
+    div.gform_confirmation_wrapper.gf_confirmation_green_gradient:after, div.gform_confirmation_wrapper.gf_confirmation_green_gradient:before, div.gform_confirmation_wrapper.gf_confirmation_yellow_gradient:after, div.gform_confirmation_wrapper.gf_confirmation_yellow_gradient:before {
+        z-index: -1;
+        position: absolute;
+        content: "";
+        bottom: 15px;
+        left: 10px;
+        width: 50%;
+        top: 80%;
+        max-width: 40%;
+        background: rgba(0, 0, 0, .2);
+        -webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, .2);
+        -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, .2);
+        box-shadow: 0 15px 10px rgba(0, 0, 0, .2);
+        -webkit-transform: rotate(-3deg);
+        -moz-transform: rotate(-3deg);
+        -o-transform: rotate(-3deg);
+        -ms-transform: rotate(-3deg);
+        transform: rotate(-3deg)
+    }
+
+    div.gform_confirmation_wrapper.gf_confirmation_green_gradient:after, div.gform_confirmation_wrapper.gf_confirmation_yellow_gradient:after {
+        -webkit-transform: rotate(3deg);
+        -moz-transform: rotate(3deg);
+        -o-transform: rotate(3deg);
+        -ms-transform: rotate(3deg);
+        transform: rotate(3deg);
+        right: 10px;
+        left: auto
+    }
+
+    .cm-hipaa-submitted-form-fields.gf_simple_horizontal_wrapper.centered_wrapper {
+        width: auto;
+        margin: 0 auto;
+        display: table
+    }
+
+    .cm-hipaa-submitted-form-fields form.gf_simple_horizontal {
+        width: calc(100% - 16px);
+        margin: 0 auto
+    }
+
+    .cm-hipaa-submitted-form-fields form.gf_simple_horizontal div.gform_body, .cm-hipaa-submitted-form-fields form.gf_simple_horizontal div.gform_footer.top_label {
+        display: table-cell;
+        vertical-align: middle;
+        margin: 0;
+        padding: 0;
+        position: relative
+    }
+
+    .cm-hipaa-submitted-form-fields form.gf_simple_horizontal div.gform_body {
+        width: auto;
+        max-width: 75%
+    }
+
+    .cm-hipaa-submitted-form-fields form.gf_simple_horizontal div.ginput_container, .cm-hipaa-submitted-form-fields form.gf_simple_horizontal ul li.gfield {
+        margin-top: 0 !important
+    }
+
+    .cm-hipaa-submitted-form-fields form.gf_simple_horizontal div.gform_footer.top_label {
+        width: auto;
+        max-width: 25%;
+        padding: 0;
+        margin: 0
+    }
+
+    body:not(rtl) .cm-hipaa-submitted-form-fields form.gf_simple_horizontal div.gform_footer.top_label {
+        text-align: left
+    }
+
+    .cm-hipaa-submitted-form-fields form.gf_simple_horizontal div.gform_body ul.top_label {
+        display: table;
+        width: 100%
+    }
+
+    .cm-hipaa-submitted-form-fields form.gf_simple_horizontal div.gform_body ul.top_label li.gfield {
+        display: table-cell;
+        padding-right: 1em;
+        height: auto
+    }
+
+    .cm-hipaa-submitted-form-fields form.gf_simple_horizontal .gfield_description:not(.validation_message), .cm-hipaa-submitted-form-fields form.gf_simple_horizontal .ginput_complex label, .cm-hipaa-submitted-form-fields form.gf_simple_horizontal label.gfield_label {
+        display: block;
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: -9000px
+    }
+
+    .cm-hipaa-submitted-form-fields form.gf_simple_horizontal div.gform_body ul.top_label.form_sublabel_above li.gfield, .cm-hipaa-submitted-form-fields form.gf_simple_horizontal div.gform_body ul.top_label.form_sublabel_below li.gfield {
+        vertical-align: middle
+    }
+
+    .cm-hipaa-submitted-form-fields form.gf_simple_horizontal div.gform_body ul.top_label li.gfield input.large, .cm-hipaa-submitted-form-fields form.gf_simple_horizontal div.gform_body ul.top_label li.gfield input.medium, .cm-hipaa-submitted-form-fields form.gf_simple_horizontal div.gform_body ul.top_label li.gfield input.small, .cm-hipaa-submitted-form-fields form.gf_simple_horizontal div.gform_body ul.top_label li.gfield select.large, .cm-hipaa-submitted-form-fields form.gf_simple_horizontal div.gform_body ul.top_label li.gfield select.medium, .cm-hipaa-submitted-form-fields form.gf_simple_horizontal div.gform_body ul.top_label li.gfield select.small {
+        width: 100%
+    }
+
+    .cm-hipaa-submitted-form-fields form.gf_simple_horizontal div.gform_footer.top_label input[type=submit], .cm-hipaa-submitted-form-fields form.gf_simple_horizontal div.gform_footer.top_label input[type=button], .cm-hipaa-submitted-form-fields form.gf_simple_horizontal div.gform_footer.top_label input[type=image] {
+        height: auto
+    }
+
+    .cm-hipaa-submitted-form-fields form.gf_simple_horizontal .top_label .gfield_error {
+        margin-bottom: 0
+    }
+
+    .cm-hipaa-submitted-form-fields form.gf_simple_horizontal ul li.gfield .ginput_container_checkbox ul li, .cm-hipaa-submitted-form-fields form.gf_simple_horizontal ul li.gfield .ginput_container_radio ul li {
+        display: inline-block;
+        margin-right: .5em
+    }
+
+    html[dir=rtl] .cm-hipaa-submitted-form-fields form.gf_simple_horizontal div.ginput_complex.ginput_container.gf_name_has_2 span {
+        width: 48.5%
+    }
+
+    html[dir=rtl] .cm-hipaa-submitted-form-fields form.gf_simple_horizontal div.ginput_complex.ginput_container.gf_name_has_3 span {
+        width: 33%
+    }
+
+    html[dir=rtl] .cm-hipaa-submitted-form-fields form.gf_simple_horizontal div.ginput_complex.ginput_container.gf_name_has_4 span {
+        width: 24.5%
+    }
+
+    html[dir=rtl] .cm-hipaa-submitted-form-fields form.gf_simple_horizontal div.ginput_complex.ginput_container.gf_name_has_5 span {
+        width: 19.5%
+    }
+}
+
+body .cm-hipaa-submitted-form-fields.gf_form_center_wrapper {
+    padding: 16px 0 16px 16px
+}
+.ginput_complex .gfield_time_hour,
+.ginput_complex .hour_minute_colon,
+.ginput_complex .gfield_time_minute,
+.ginput_complex .gfield_time_ampm{
+    float: left;
+}
+
+.cm-hipaa-submitted-form-fields .gfield-errors,
+.pdf-body .gfield-errors,
+.cm-hippa-submitted-forms-fields .validation_message,
+.pdf-body .validation_message{
+    display: none;
+}
+
+.cm-hipaa-submitted-form-fields div.gform_footer.top_label,
+.pdf-body div.gform_footer.top_label{
+    display: none !important;
+}
+.cm-hipaa-submitted-form-fields .gfield_header_item:last-child.gfield_header_item--icons,
+.cm-hipaa-submitted-form-fields .gfield_list_icons{
+    display: none !important;
+}
+.cm-hipaa-submitted-form-fields .gfield_header_item:last-child{
+    display: inline !important;
+    margin-left: 2%;
+    flex-grow: 1 !important;
+    width: 0 !important;
+}
+
+
+/*** MEDIA QUERIES ***/
+@media only screen and (max-width : 768px) {
+    .cm-hipaa-half-column {
+        display: block;
+        width: 100%;
+    }
+
+    .cm_hipaa_grid_row_nogap {
+        display: block;
+    }
+
+    .cm_hipaa_col_5,
+    .cm_hipaa_col_10,
+    .cm_hipaa_col_14,
+    .cm_hipaa_col_15,
+    .cm_hipaa_col_16,
+    .cm_hipaa_col_20,
+    .cm_hipaa_col_25,
+    .cm_hipaa_col_30,
+    .cm_hipaa_col_33,
+    .cm_hipaa_col_35,
+    .cm_hipaa_col_40,
+    .cm_hipaa_col_45,
+    .cm_hipaa_col_50,
+    .cm_hipaa_col_55,
+    .cm_hipaa_col_60,
+    .cm_hipaa_col_65,
+    .cm_hipaa_col_66,
+    .cm_hipaa_col_70,
+    .cm_hipaa_col_75,
+    .cm_hipaa_col_80,
+    .cm_hipaa_col_85,
+    .cm_hipaa_col_90,
+    .cm_hipaa_col_95,
+    .cm_hipaa_grid_row_nogap .cm_hipaa_col_5,
+    .cm_hipaa_grid_row_nogap .cm_hipaa_col_10,
+    .cm_hipaa_grid_row_nogap .cm_hipaa_col_14,
+    .cm_hipaa_grid_row_nogap .cm_hipaa_col_15,
+    .cm_hipaa_grid_row_nogap .cm_hipaa_col_16,
+    .cm_hipaa_grid_row_nogap .cm_hipaa_col_20,
+    .cm_hipaa_grid_row_nogap .cm_hipaa_col_25,
+    .cm_hipaa_grid_row_nogap .cm_hipaa_col_30,
+    .cm_hipaa_grid_row_nogap .cm_hipaa_col_33,
+    .cm_hipaa_grid_row_nogap .cm_hipaa_col_35,
+    .cm_hipaa_grid_row_nogap .cm_hipaa_col_40,
+    .cm_hipaa_grid_row_nogap .cm_hipaa_col_45,
+    .cm_hipaa_grid_row_nogap .cm_hipaa_col_50,
+    .cm_hipaa_grid_row_nogap .cm_hipaa_col_55,
+    .cm_hipaa_grid_row_nogap .cm_hipaa_col_60,
+    .cm_hipaa_grid_row_nogap .cm_hipaa_col_65,
+    .cm_hipaa_grid_row_nogap .cm_hipaa_col_66,
+    .cm_hipaa_grid_row_nogap .cm_hipaa_col_70,
+    .cm_hipaa_grid_row_nogap .cm_hipaa_col_75,
+    .cm_hipaa_grid_row_nogap .cm_hipaa_col_80,
+    .cm_hipaa_grid_row_nogap .cm_hipaa_col_85,
+    .cm_hipaa_grid_row_nogap .cm_hipaa_col_90,
+    .cm_hipaa_grid_row_nogap .cm_hipaa_col_95,
+    .cm_hipaa_grid_row_nogap .cm_hipaa_col_100 {
+        display: block;
+        width: 100%;
+    }
+
+    .cm-submitted-form-filter input {
+        width: 90%;
+    }
+
+    .cm-hipaa-tour-tab-menu ul {
+        display: none !important;
+    }
+
+    .cm-hipaa-accordion-tab-link {
+        display: block;
+    }
+
+    .cm-hipaa-tour-tab-left-col, .cm-hipaa-tour-tab-right-col {
+        display: block;
+        width: 100%;
+    }
+
+    .cm-hipaa-tour-tab-left-col {
+        height: auto;
+        padding: 0;
+    }
+
+    .cm-hipaa-tour-tab-right-col {
+        height: 50vh;
+        padding: 2vh 1.5vw;
+        width: 100%;
+        /* Safari for iOS < 8 and IE <= 10 */
+        content: 'viewport-units-buggyfill; height: 50vh; padding: 2vh 1.5vw';
+    }
+
+    .cm-hipaa-tour-tab-left-col {
+        display: none;
+    }
+
+    .cm-hipaa-tour-tab-menu li {
+        list-style: none;
+        margin-left: 0;
+    }
+
+    .cm-hipaa-tour-tab-content {
+        display: none;
+        height: 95%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .cm-hipaa-tour-tab-menu li {
+        list-style: none;
+        margin-left: 0;
+    }
+}
